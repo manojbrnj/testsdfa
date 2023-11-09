@@ -22,7 +22,8 @@ public class PlayerIdleState : PlayerGroundedState
     public override void Update()
     {
         base.Update();
-      
-       
+      //  Debug.Log("IdleState me hu");
+
+
     }
 }

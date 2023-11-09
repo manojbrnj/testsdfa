@@ -6,7 +6,7 @@ using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCou
 
 public class Player : Entity
 {
-
+    
 
     //Player Sates and Player Statemachine
     public PlayerStateMachine playerStateMachine;
@@ -66,6 +66,7 @@ public class Player : Entity
     protected override void Update()
     {
         base.Update();
+        
         zeroveloforasecond -= Time.deltaTime;
         comboTimer -= Time.deltaTime;
         dashCoolDownTimer -= Time.deltaTime;
@@ -90,7 +91,13 @@ public class Player : Entity
         #endregion
         playerStateMachine._currentState.Update();
     }
+    
     public void AnimationTrigger() => playerStateMachine._currentState.AnimationTrigger();
+
+    public override void Damage()
+    {
+        base.Damage();
+    }
     //public bool busy;
     //public float busyTime;
     //public IEnumerator BusyFor(float time)

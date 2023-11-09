@@ -6,6 +6,10 @@ public class Entity : MonoBehaviour
     public Rigidbody2D rb;
     public Animator anim;
 
+    [Header("Attack Details")]
+    public Transform attackCheck;
+    public float attackRadius;
+
     [Header("GroundCheck")]
     [SerializeField] protected float groundCheckDistance;
     [SerializeField] protected Transform groundCheck;
@@ -48,6 +52,8 @@ public class Entity : MonoBehaviour
         Gizmos.DrawLine(groundCheck.position, new Vector2(groundCheck.position.x,groundCheck.position.y - groundCheckDistance));
         Gizmos.color = Color.red;
         Gizmos.DrawLine(wallCheck.position, new Vector2(wallCheck.position.x + wallCheckDistance * facingDir, wallCheck.position.y ));
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackCheck.position,attackRadius);
 
     }
 
@@ -85,5 +91,8 @@ public class Entity : MonoBehaviour
         }
     }
 
-
+    public virtual void Damage()
+    {
+        Debug.Log(gameObject.name + "Damaged");
+    }
 }

@@ -16,7 +16,7 @@ public class PlayerAttackState : PlayerStates
        
         base.Enter();
 
-        Debug.Log(counter);
+      //  Debug.Log(counter);
         player.zeroveloforasecond = .2f;
     
         if (counter > 2 || Time.time >= lastTimeAttack + player.comboTime)
@@ -49,7 +49,7 @@ public class PlayerAttackState : PlayerStates
 
         if (trigger )
         {
-            Debug.Log("StateChange");
+//Debug.Log("StateChange");
             player.playerStateMachine.ChangeState(player.IdleState);
         }
     }

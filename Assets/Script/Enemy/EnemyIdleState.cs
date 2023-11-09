@@ -16,7 +16,7 @@ public class EnemyIdleState : EnemyGroundedState
         enemy.anim.SetBool(animBoolName, true);
 
 
-        Debug.Log("Idle Enemy");
+       // Debug.Log("Idle Enemy");
     }
 
     public override void Exit()
@@ -28,6 +28,8 @@ public class EnemyIdleState : EnemyGroundedState
     public override void Update()
     {
         base.Update();
+
+       
         enemyStateController.ChangeState(enemy.WalkState);
     }
 }

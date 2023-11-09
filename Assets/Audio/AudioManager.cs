@@ -8,7 +8,7 @@ public class AudioManager : MonoBehaviour
 
     public static AudioManager instance;
     public AudioClip[] sounds,effects;
-    public AudioSource music,sfx;
+    public AudioSource music,sfx,walk;
     private void Awake()
     {
    if (instance == null)
@@ -21,10 +21,10 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
+  
     public void PlayMusic(string name)
     {
-        Debug.Log(name);
+       // Debug.Log(name);
         var sound = Array.Find(sounds, s => s.name == name);
         if (sound == null)
         {
@@ -36,25 +36,30 @@ public class AudioManager : MonoBehaviour
             music.Play();
         }
     }
-    public void PlaySfx(string name,float time)
+    public void PlaySfx(string name)
     {
         var sound = Array.Find(effects, s => s.name == name);
         if (sound == null)
         {
-            Debug.Log("Sfx not found", sound);
+           // Debug.Log("Sfx not found", sound);
         }
         else
         {
-            Debug.Log("Blast");
-             //  sfx.clip = sound;
-            sfx.PlayOneShot(sound,time);
+            if (sound.name == "walk")
+            {
+              //  Debug.Log("PlayWalk");
+                walk.PlayOneShot(sound);
+            }
+            if(sound.name == "Blast")
+            sfx.PlayOneShot(sound);
         }
     }
+ 
 
     // Start is called before the first frame update
     void Start()
     {
-        PlayMusic("Play1");
+        PlayMusic("Play2");
     }
 
     // Update is called once per frame

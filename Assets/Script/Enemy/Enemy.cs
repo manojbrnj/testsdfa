@@ -7,9 +7,11 @@ public class Enemy : Entity
     public Transform playerCheck;
     public float playerDistance;
     public LayerMask isPlayer;
+  
     protected override void Awake()
     {
         base.Awake();
+    
     }
 
     protected override void Start()
@@ -21,6 +23,7 @@ public class Enemy : Entity
     protected override void Update()
     {
         base.Update();
+    
     }
 
     protected override void OnDrawGizmos()
@@ -30,5 +33,12 @@ public class Enemy : Entity
         Gizmos.DrawLine(playerCheck.position, new Vector2(playerCheck.position.x + playerDistance * facingDir, playerCheck.position.y));
 
     }
-    public bool IsPlayerDetected() => Physics2D.Raycast(playerCheck.position,new Vector2(facingDir,0),playerDistance,isPlayer);
+
+       
+    public RaycastHit2D IsPlayerDetected() => Physics2D.Raycast(playerCheck.position,new Vector2(facingDir,0),playerDistance,isPlayer);
+
+    public override void Damage()
+    {
+        base.Damage();
+    }
 }

@@ -6,6 +6,7 @@ public class EnemyStates
 {
     //public SkeletonEnemy enemy;
     public Enemy enemyBase;
+    public bool trigger;
     public EnemyStateController enemyStateController;
     public string animBoolName;
     public EnemyStates(Enemy _enemyBase,EnemyStateController _enemyStateController,string _animBoolName)
@@ -16,11 +17,16 @@ public class EnemyStates
     }
     
     public virtual void Enter() {
-     
+     trigger = false;
     }
     public virtual void Exit() {
     
     }
     public virtual void Update() { }
+    public virtual void AnimationTrigger ()
+    { 
+        trigger = true;
+      //  Debug.Log("Trigger Hua");
+    }
 
 }

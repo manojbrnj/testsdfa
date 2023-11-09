@@ -21,7 +21,7 @@ public class PlayerGroundedState : PlayerStates
     public override void Update()
     {
         base.Update();
-      
+
         
      
        if(xInput != 0 && player.IsGroundCheck())
