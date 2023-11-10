@@ -7,7 +7,14 @@ public class Enemy : Entity
     public Transform playerCheck;
     public float playerDistance;
     public LayerMask isPlayer;
-  
+    public EntityFx fx;
+
+    [Header("StunState")]
+    public float stunDuration;
+    public float stunKnockBack;
+
+
+
     protected override void Awake()
     {
         base.Awake();
@@ -17,6 +24,7 @@ public class Enemy : Entity
     protected override void Start()
     {
         base.Start();
+        fx = GetComponent<EntityFx>();
     
     }
 
@@ -40,5 +48,6 @@ public class Enemy : Entity
     public override void Damage()
     {
         base.Damage();
+        StartCoroutine(fx.FlashFx());
     }
 }

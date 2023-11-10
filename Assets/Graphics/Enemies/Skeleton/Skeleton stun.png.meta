@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8217f41600b8ffb48a4321d480e7a15d
+guid: b2b24b32cab53a244a343a307921e190
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,7 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Skeleton Hit_0
+      name: Skeleton stun_0
       rect:
         serializedVersion: 2
         x: 6
@@ -143,14 +143,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 553474a78e549e1469ff74cfff909f9e
-      internalID: -1848351448
+      spriteID: f2c43a3a5d3d2ef4aa1305c8bf26df2e
+      internalID: -751099649
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Hit_1
+      name: Skeleton stun_1
       rect:
         serializedVersion: 2
         x: 36
@@ -164,14 +164,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aef50658320b45a42b6ed1d65924a13b
-      internalID: 109565926
+      spriteID: 9b63c12599ba835409e158323542cb83
+      internalID: 737477247
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Hit_2
+      name: Skeleton stun_2
       rect:
         serializedVersion: 2
         x: 62
@@ -185,14 +185,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75e5916600d0e0a48b5695f99febbfed
-      internalID: -1226684526
+      spriteID: 02a154fa548f64a46be72312324a835e
+      internalID: -191614456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Hit_3
+      name: Skeleton stun_3
       rect:
         serializedVersion: 2
         x: 90
@@ -206,14 +206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 778821c704a47d44988da047c2da42ae
-      internalID: -1476342366
+      spriteID: e0d1f5cf481170e4caa10987e116bbd6
+      internalID: -450425360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Hit_4
+      name: Skeleton stun_4
       rect:
         serializedVersion: 2
         x: 123
@@ -227,14 +227,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a382166e3003044a8594d2bf5d32c9c
-      internalID: 1455156163
+      spriteID: ac757793afd67704caaa4d6e834d55b9
+      internalID: 1090111068
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Hit_5
+      name: Skeleton stun_5
       rect:
         serializedVersion: 2
         x: 156
@@ -248,14 +248,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17e024fff5e236e4ca6fa060f347178e
-      internalID: -1149820575
+      spriteID: 02373af6fd10cff48811f3a1038b2fa5
+      internalID: 1562476175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Hit_6
+      name: Skeleton stun_6
       rect:
         serializedVersion: 2
         x: 186
@@ -269,14 +269,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d09c647dd8230d647a2155fe8ef43d7a
-      internalID: -1502145473
+      spriteID: d56dcbcc245267a42ae6a782322dfaaa
+      internalID: -835100198
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Hit_7
+      name: Skeleton stun_7
       rect:
         serializedVersion: 2
         x: 216
@@ -290,8 +290,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f067e04b75cd2a49acb6838781314cb
-      internalID: -912697519
+      spriteID: 9ea9bae6ea69eea429fcc940b90d1ab1
+      internalID: 717310418
       vertices: []
       indices: 
       edges: []
@@ -307,14 +307,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Skeleton Hit_3: -1476342366
-      Skeleton Hit_5: -1149820575
-      Skeleton Hit_6: -1502145473
-      Skeleton Hit_1: 109565926
-      Skeleton Hit_4: 1455156163
-      Skeleton Hit_0: -1848351448
-      Skeleton Hit_2: -1226684526
-      Skeleton Hit_7: -912697519
+      Skeleton stun_6: -835100198
+      Skeleton stun_3: -450425360
+      Skeleton stun_4: 1090111068
+      Skeleton stun_5: 1562476175
+      Skeleton stun_2: -191614456
+      Skeleton stun_7: 717310418
+      Skeleton stun_0: -751099649
+      Skeleton stun_1: 737477247
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

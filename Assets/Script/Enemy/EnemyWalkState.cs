@@ -41,6 +41,11 @@ public class EnemyWalkState : EnemyGroundedState
         {
             enemy.Flip();
         }
+
+        if(Input.GetKeyDown(KeyCode.X))
+        {
+            enemy.enemyStateController.ChangeState(enemy.StunState);
+        }
       
        
     }

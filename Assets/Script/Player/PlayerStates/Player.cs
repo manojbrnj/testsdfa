@@ -18,7 +18,7 @@ public class Player : Entity
     public PlayerWallJump WallJump;
     public PlayerDashState DashState;
     public PlayerAttackState AttackState;
-
+    public EntityFx fx;
     [Header("playerDash")]
     public float dashTimer;
     public float dashDuration;
@@ -59,6 +59,7 @@ public class Player : Entity
     protected override void Start()
     {
         base.Start();
+        fx = GetComponent<EntityFx>();
         playerStateMachine.InitializeState(IdleState);
 
     }
@@ -97,6 +98,8 @@ public class Player : Entity
     public override void Damage()
     {
         base.Damage();
+        StartCoroutine(fx.FlashFx());
+       
     }
     //public bool busy;
     //public float busyTime;

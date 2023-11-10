@@ -11,6 +11,7 @@ public class SkeletonEnemy : Enemy
     public EnemyWalkState WalkState;
     public EnemyBattleState BattleState;
     public EnemySkeletonAttack AttackState;
+    public EnemyStunState StunState;
 
     protected override void Awake()
     {
@@ -27,6 +28,7 @@ public class SkeletonEnemy : Enemy
         WalkState = new EnemyWalkState(baseEnemy, enemyStateController, "Walk", this);
         BattleState = new EnemyBattleState(baseEnemy, enemyStateController, "Walk", this);
         AttackState = new EnemySkeletonAttack(baseEnemy, enemyStateController, "Attack", this);
+        StunState = new EnemyStunState(baseEnemy, enemyStateController, "Attack", this);
         enemyStateController.InitializeState(IdleState);
     }
 
