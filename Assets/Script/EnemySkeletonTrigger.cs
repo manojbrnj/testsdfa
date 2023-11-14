@@ -23,4 +23,7 @@ public class EnemySkeletonTrigger : MonoBehaviour
             }
         }
     }
+
+    private void OpenCounterWindow() => enemy.StunEnemy();
+    private void CloseCouunterWindow() => enemy.StunEnemyFinish();
 }

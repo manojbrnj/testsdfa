@@ -26,7 +26,7 @@ public class Distructibles : MonoBehaviour
         {
 
             Destroy(gameObject);
-            AudioManager.instance.PlaySfx("Blast");
+           // AudioManager.instance.PlaySfx("Blast");
             destload = (GameObject)Instantiate(destobject);
             partload = (GameObject)Instantiate(particleobject);
             destload.transform.position = transform.position;

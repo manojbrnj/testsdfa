@@ -2,13 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Unity.VisualScripting.Member;
 
 public class AudioManager : MonoBehaviour
 {
 
     public static AudioManager instance;
     public AudioClip[] sounds,effects;
-    public AudioSource music,sfx,walk;
+    public AudioSource music,sfx;
     private void Awake()
     {
    if (instance == null)
@@ -36,26 +37,26 @@ public class AudioManager : MonoBehaviour
             music.Play();
         }
     }
-    public void PlaySfx(string name)
+    public void PlaySfx()
     {
-        var sound = Array.Find(effects, s => s.name == name);
-        if (sound == null)
-        {
-           // Debug.Log("Sfx not found", sound);
-        }
-        else
-        {
-            if (sound.name == "walk")
-            {
-              //  Debug.Log("PlayWalk");
-                walk.PlayOneShot(sound);
-            }
-            if(sound.name == "Blast")
-            sfx.PlayOneShot(sound);
-        }
-    }
- 
+        Debug.Log("Playing");
 
+
+
+      if (!sfx.isPlaying)
+      {
+      sfx.Play();
+      }
+    }
+
+    public void StopPlaySfx()
+    {
+        if(sfx.isPlaying)
+        {
+            sfx.Stop();
+        }
+     
+    }
     // Start is called before the first frame update
     void Start()
     {

@@ -14,6 +14,8 @@ public class PlayerDashState : PlayerStates
         player.dashTimer = player.dashDuration;
        // player.SetVelocity(player.dashSpeed, rb.velocity.y);
         rb.velocity = new Vector2(player.dashSpeed * player.facingDir, 0);
+        SkillManager.instance.cloneskill.CreateClone(player);
+
     }
 
     public override void Exit()

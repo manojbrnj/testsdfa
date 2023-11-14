@@ -40,5 +40,13 @@ public class SkeletonEnemy : Enemy
     }
     public virtual void AnimationTriggerFinish() => enemyStateController._currentState.AnimationTrigger();
 
-  
+    public override bool CanBeStunned()
+    {
+        if (base.CanBeStunned())
+        {
+            enemyStateController.ChangeState(StunState);
+            return true;
+        }
+        return false;
+    }
 }

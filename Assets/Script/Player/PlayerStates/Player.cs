@@ -18,12 +18,13 @@ public class Player : Entity
     public PlayerWallJump WallJump;
     public PlayerDashState DashState;
     public PlayerAttackState AttackState;
+    public PlayerCounterAttack counterAttackState;
     public EntityFx fx;
     [Header("playerDash")]
     public float dashTimer;
     public float dashDuration;
     public float dashCoolDown;
-    public float dashCoolDownTimer;
+   // public float dashCoolDownTimer;
     public float dashSpeed;
 
 
@@ -39,9 +40,18 @@ public class Player : Entity
     public float zeroveloforasecond;
     public Vector2[] attackMovement;
 
+    [Header("CounterAttack")]
+    public float counterAttackDuration = .2f;
+    public float stateTimer;
+    private float couterAttackTimer;
+    public float counterAttackDelay;
+
+
     public float lastTimesingleAttack;
     public Vector2 jump;
 
+
+ 
     protected override void Awake()
     {
         base.Awake();
@@ -54,10 +64,13 @@ public class Player : Entity
         WallJump = new PlayerWallJump(this, playerStateMachine, "Jump");
         DashState = new PlayerDashState(this, playerStateMachine, "Dash");
         AttackState = new PlayerAttackState(this, playerStateMachine, "Attack");
+        counterAttackState = new PlayerCounterAttack(this,playerStateMachine, "CouterAttack");// CouterAttack
+
     }
     // Start is called before the first frame update
     protected override void Start()
     {
+
         base.Start();
         fx = GetComponent<EntityFx>();
         playerStateMachine.InitializeState(IdleState);
@@ -67,19 +80,20 @@ public class Player : Entity
     protected override void Update()
     {
         base.Update();
-        
+        stateTimer -= Time.deltaTime;
         zeroveloforasecond -= Time.deltaTime;
         comboTimer -= Time.deltaTime;
-        dashCoolDownTimer -= Time.deltaTime;
+        //dashCoolDownTimer -= Time.deltaTime;
         dashTimer -= Time.deltaTime;
         wallJumpTimer -= Time.deltaTime;
         wallJumpCoolDownTimer -= Time.deltaTime;
+        couterAttackTimer -= Time.deltaTime;
 
         #region Dash
-        if (Input.GetKeyDown(KeyCode.F) && dashCoolDownTimer < 0)
+        if (Input.GetKeyDown(KeyCode.F) && SkillManager.instance.dashskill.CanWeUseSkill())
         {
             playerStateMachine.ChangeState(DashState);
-            dashCoolDownTimer = dashCoolDown;
+          //  dashCoolDownTimer = dashCoolDown;
         }
         #endregion
         // Debug.Log(playerStateMachine._currentState);
@@ -88,6 +102,13 @@ public class Player : Entity
         {
 
             playerStateMachine.ChangeState(AttackState);
+        }
+        #endregion
+        #region CounterAttack
+        if (Input.GetKeyDown(KeyCode.C) && couterAttackTimer < 0)
+        {
+            couterAttackTimer = counterAttackDelay;
+            playerStateMachine.ChangeState(counterAttackState);
         }
         #endregion
         playerStateMachine._currentState.Update();

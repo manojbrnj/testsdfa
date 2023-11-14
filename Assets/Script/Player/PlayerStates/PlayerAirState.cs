@@ -11,6 +11,7 @@ public class PlayerAirState : PlayerStates
     public override void Enter()
     {
         base.Enter();
+       
     }
 
     public override void Exit()
@@ -30,7 +31,7 @@ public class PlayerAirState : PlayerStates
         if (xInput != 0)
         {
             //  rb.velocity = new Vector2();
-            player.SetVelocity(player.moveSpeed * 0.5f * xInput, rb.velocity.y);
+            player.SetVelocity(player.moveSpeed * 0.9f * xInput, rb.velocity.y);
         }
         if (player.IsGroundCheck())
         {

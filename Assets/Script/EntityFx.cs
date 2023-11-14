@@ -50,4 +50,6 @@ public class EntityFx : MonoBehaviour
         CancelInvoke();
         spriteRenderer.color = Color.white;
     }
+
+  
 }

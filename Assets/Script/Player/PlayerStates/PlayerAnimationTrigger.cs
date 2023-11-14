@@ -18,6 +18,14 @@ public class PlayerAnimationTrigger : MonoBehaviour
         
     }
 
+    public void FootStepStart()
+    {
+        AudioManager.instance.PlaySfx();
+    }
+    public void FootStepEnd()
+    {
+        AudioManager.instance.StopPlaySfx();
+    }
     public void AnimationTrigger()
     {
         player.AnimationTrigger();

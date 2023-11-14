@@ -12,6 +12,8 @@ public class Enemy : Entity
     [Header("StunState")]
     public float stunDuration;
     public float stunKnockBack;
+    public bool canEnemyStun;
+    public GameObject attackStunWindow;
 
 
 
@@ -49,5 +51,29 @@ public class Enemy : Entity
     {
         base.Damage();
         StartCoroutine(fx.FlashFx());
+    }
+    public virtual void StunEnemy()
+    {
+        canEnemyStun = true;
+        attackStunWindow.SetActive(true);
+    }
+    public virtual void StunEnemyFinish()
+    {
+        canEnemyStun = false;
+        attackStunWindow.SetActive(false);
+    }
+
+    public virtual bool CanBeStunned()
+    {
+        if (canEnemyStun)
+        {
+           canEnemyStun = false;
+            StunEnemyFinish();
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }
