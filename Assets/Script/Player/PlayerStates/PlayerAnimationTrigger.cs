@@ -43,4 +43,20 @@ public class PlayerAnimationTrigger : MonoBehaviour
             }
         }
     }
+
+
+    public void IdleStateTrigger()
+    {
+       player.playerStateMachine.ChangeState(player.IdleState);
+    }
+
+
+    public void DisablePlayer()
+    {
+        player.enabled = false;
+    }
+    public void AnablePlayer()
+    {
+        player.enabled = true;
+    }
 }

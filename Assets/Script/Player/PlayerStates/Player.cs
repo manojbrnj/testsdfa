@@ -19,6 +19,8 @@ public class Player : Entity
     public PlayerDashState DashState;
     public PlayerAttackState AttackState;
     public PlayerCounterAttack counterAttackState;
+    public PlayerSwordAimState SwordAimState;
+    public PlayerSwordThrowState SwordThrowState;
     public EntityFx fx;
     [Header("playerDash")]
     public float dashTimer;
@@ -65,6 +67,9 @@ public class Player : Entity
         DashState = new PlayerDashState(this, playerStateMachine, "Dash");
         AttackState = new PlayerAttackState(this, playerStateMachine, "Attack");
         counterAttackState = new PlayerCounterAttack(this,playerStateMachine, "CouterAttack");// CouterAttack
+        SwordAimState = new PlayerSwordAimState(this,playerStateMachine,"AimSword");
+        SwordThrowState = new PlayerSwordThrowState(this, playerStateMachine, "ThrowSword");
+        
 
     }
     // Start is called before the first frame update
@@ -130,4 +135,25 @@ public class Player : Entity
     //    yield return new WaitForSeconds(time);
     //    busy = false;
     //}
+
+    // TIme line Code
+
+    public void DisablePlayer()
+    {
+
+
+        this.enabled = true;
+
+    }
+    public void AnablePlayer()
+    {
+        this.enabled = true;
+    }
+    public void DisableScriptPlayer()
+    {
+
+
+        this.enabled = false;
+
+    }
 }

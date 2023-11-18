@@ -23,7 +23,12 @@ public class PlayerGroundedState : PlayerStates
         base.Update();
 
         
-     
+     if(Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            Debug.Log("Moues");
+            player.playerStateMachine.ChangeState(player.SwordAimState);
+            return;
+        }
        if(xInput != 0 && player.IsGroundCheck())
         {
             player.playerStateMachine.ChangeState(player.MoveState);

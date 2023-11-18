@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,7 +69,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -127,7 +127,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: SwordSpin_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 541
+        width: 68
+        height: 69
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 657f1780383522946942d259c692a353
+      internalID: 1092592783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordSpin_1
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 541
+        width: 68
+        height: 32
+      alignment: 9
+      pivot: {x: 0.45983347, y: 0.48311043}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd651ff74ace7649a3f64c150da1f34
+      internalID: -1695158039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordSpin_2
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 541
+        width: 68
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4910561, y: 0.52059937}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ce95a2766e5064ba8cf6a4db38795a
+      internalID: -821366920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordSpin_3
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 541
+        width: 68
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5275798, y: 0.5714588}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94fc182d0d5406d4cbe38d22c628eca0
+      internalID: 1218394901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordSpin_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 482
+        width: 68
+        height: 60
+      alignment: 9
+      pivot: {x: 0.4735765, y: 0.5730949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7bc45d2e2cb44745b94f16695fd136f
+      internalID: 119975935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordSpin_5
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 472
+        width: 68
+        height: 60
+      alignment: 9
+      pivot: {x: 0.49697056, y: 0.5192955}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ec6491776e66fc4489ae16e7bacfbae
+      internalID: 1291002880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordSpin_6
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 472
+        width: 68
+        height: 60
+      alignment: 9
+      pivot: {x: 0.50899684, y: 0.46970135}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 685fc452e971f5148bbd1eafbd4c6d33
+      internalID: 1422251091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordSpin_7
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 472
+        width: 68
+        height: 61
+      alignment: 9
+      pivot: {x: 0.53018236, y: 0.5008744}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eca249cd2054a34a86c0b07be71160f
+      internalID: 2052395119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordSpin_8
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 472
+        width: 68
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5478116, y: 0.5003733}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a4de9d65dbcbe428e92073a20584f2
+      internalID: -1037971315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordSpin_9
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 472
+        width: 68
+        height: 61
+      alignment: 9
+      pivot: {x: 0.54578537, y: 0.50389516}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47c1ff8f113ec8042a0118fcb9613cec
+      internalID: -349274836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordSpin_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 432
+        width: 68
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5196368, y: 0.47067013}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d148989992b5aab4cb9cdc87de7cc0f6
+      internalID: 824896465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordSpin_11
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 403
+        width: 68
+        height: 69
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9743b5bf3bb6e2442a5c58a61b05e003
+      internalID: -2081252803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -138,7 +390,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SwordSpin_10: 824896465
+      SwordSpin_1: -1695158039
+      SwordSpin_11: -2081252803
+      SwordSpin_2: -821366920
+      SwordSpin_8: -1037971315
+      SwordSpin_9: -349274836
+      SwordSpin_5: 1291002880
+      SwordSpin_3: 1218394901
+      SwordSpin_7: 2052395119
+      SwordSpin_0: 1092592783
+      SwordSpin_4: 119975935
+      SwordSpin_6: 1422251091
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

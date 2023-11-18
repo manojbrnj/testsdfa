@@ -136,8 +136,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1887703841
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 1302787883, guid: 45c73b28c8fa9ec488a48a2542f2427d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -462,12 +462,12 @@ MonoBehaviour:
   anim: {fileID: 0}
   attackCheck: {fileID: 1449285783730906194}
   attackRadius: 0.4
-  groundCheckDistance: 0.24
+  groundCheckDistance: 0.26
   groundCheck: {fileID: 1449285783220173440}
   isGroundLayer:
     serializedVersion: 2
     m_Bits: 64
-  wallCheckDistance: 0.135
+  wallCheckDistance: 0.25
   wallCheck: {fileID: 1449285783950602460}
   moveSpeed: 1.25
   jumpForce: 0
