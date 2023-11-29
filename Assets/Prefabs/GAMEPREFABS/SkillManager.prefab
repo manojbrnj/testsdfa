@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7890566686630291618
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7890566686630291617}
+  - component: {fileID: 7890566686630291647}
+  - component: {fileID: 7890566686630291616}
+  - component: {fileID: 7890566686630291646}
+  - component: {fileID: 7890566686630291645}
+  m_Layer: 0
+  m_Name: SkillManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7890566686630291617
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7890566686630291618}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.1791565, y: -4.745938, z: -0.02277938}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7890566686630291647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7890566686630291618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd019c5081875b34e92fd5b9a26e5fcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashskill: {fileID: 0}
+  cloneskill: {fileID: 0}
+  throwskill: {fileID: 0}
+--- !u!114 &7890566686630291616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7890566686630291618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43fbcf7accd3f9e4190f502e2438f0e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7890566686630291646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7890566686630291618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa5c72272f7fd354980cb8dd06f9aa75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clonePrefab: {fileID: 4505432172322903293, guid: bc397ffb5e88e5946aafa82f18d15d57, type: 3}
+  cloneGameObject: {fileID: 0}
+  cloneController: {fileID: 0}
+  canAttack: 0
+--- !u!114 &7890566686630291645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7890566686630291618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 333de4f0f3e82024dbce4abd5c3a0cb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SwordPref: {fileID: 6294860653280108406, guid: f5351915cc829f34891192852e1757d0, type: 3}
+  gravityScale: 3
+  direction: {x: 12, y: 4}

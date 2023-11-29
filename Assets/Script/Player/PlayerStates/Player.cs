@@ -20,7 +20,7 @@ public class Player : Entity
     public PlayerAttackState AttackState;
     public PlayerCounterAttack counterAttackState;
     public PlayerSwordAimState SwordAimState;
-    public PlayerSwordThrowState SwordThrowState;
+    public PlayerSwordCatchState SwordThrowState;
     public EntityFx fx;
     [Header("playerDash")]
     public float dashTimer;
@@ -28,6 +28,10 @@ public class Player : Entity
     public float dashCoolDown;
    // public float dashCoolDownTimer;
     public float dashSpeed;
+
+    //player Has Sword
+
+    public GameObject sword;
 
 
     [Header("wall Jump")]
@@ -68,7 +72,7 @@ public class Player : Entity
         AttackState = new PlayerAttackState(this, playerStateMachine, "Attack");
         counterAttackState = new PlayerCounterAttack(this,playerStateMachine, "CouterAttack");// CouterAttack
         SwordAimState = new PlayerSwordAimState(this,playerStateMachine,"AimSword");
-        SwordThrowState = new PlayerSwordThrowState(this, playerStateMachine, "ThrowSword");
+        SwordThrowState = new PlayerSwordCatchState(this, playerStateMachine, "ThrowSword");
         
 
     }
@@ -156,4 +160,16 @@ public class Player : Entity
         this.enabled = false;
 
     }
+
+    public void AssignSword( GameObject _sword)
+    {
+        sword = _sword;
+    }
+
+    public void ClearSword()
+    {
+        Destroy(sword);
+    }
+
+  
 }

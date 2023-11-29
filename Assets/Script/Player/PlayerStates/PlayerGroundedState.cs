@@ -23,7 +23,7 @@ public class PlayerGroundedState : PlayerStates
         base.Update();
 
         
-     if(Input.GetKeyDown(KeyCode.Mouse1))
+     if(Input.GetKeyDown(KeyCode.Mouse1) && !player.sword)
         {
             Debug.Log("Moues");
             player.playerStateMachine.ChangeState(player.SwordAimState);

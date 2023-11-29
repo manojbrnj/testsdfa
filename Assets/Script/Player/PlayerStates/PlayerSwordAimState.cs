@@ -26,11 +26,14 @@ public class PlayerSwordAimState : PlayerStates
 
     public override void Update()
     {
+
+       
         base.Update();
         player.SetZeroVelocity();
         if (Input.GetKeyUp(KeyCode.Mouse1))
         {
-            player.playerStateMachine.ChangeState(player.SwordThrowState);
+            //SkillManager.instance.throwskill.CreateSword();
+            player.playerStateMachine.ChangeState(player.IdleState);
            
         }
     }

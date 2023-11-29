@@ -1,3 +1,5 @@
+using Cinemachine;
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,11 +7,14 @@ using UnityEngine;
 public class PlayerAnimationTrigger : MonoBehaviour
 {
     private Player player;
+    private CinemachineImpulseSource Impulse;
     // Start is called before the first frame update
     void Start()
     {
         player = GetComponentInParent<Player>();
-        
+        Impulse = GameObject.Find("CM vcam1").GetComponent<CinemachineImpulseSource>();
+
+
     }
 
     // Update is called once per frame
@@ -58,5 +63,21 @@ public class PlayerAnimationTrigger : MonoBehaviour
     public void AnablePlayer()
     {
         player.enabled = true;
+    }
+
+    public void ThrowSword()
+    {
+        SkillManager.instance.throwskill.CreateSword();
+    }
+
+
+    public void ShakeScreen()
+    {
+        if(Impulse != null)
+        {
+            Impulse.GenerateImpulse();
+            Debug.Log("Impulse");
+        }
+      
     }
 }

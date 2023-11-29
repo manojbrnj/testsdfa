@@ -24,12 +24,11 @@ public class PlayerJumpstate : PlayerStates
     {
         base.Update();
 
-       
         if (rb.velocity.y < 0)
         {
             playerStateMachine.ChangeState(player.AirState);
         }
-        if (xInput != 0)
+        if (xInput != 0 && !player.IsWallCheck())
         {
             rb.velocity = new Vector2(player.moveSpeed  * xInput, rb.velocity.y);
         }

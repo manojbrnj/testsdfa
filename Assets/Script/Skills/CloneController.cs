@@ -85,13 +85,15 @@ public class CloneController : MonoBehaviour
                 Debug.Log("skhdfkjshkjfhdskjfhjksd" + closestEnemy.name);
             }
         }
-       
-
-        if (closestEnemy.transform.position.x < PlayerManager.Instance.player.transform.position.x )
-        {
-            Debug.Log("skhdfkjshkjfhdskjfhjksd" + closestEnemy.name);
-            transform.Rotate(0, -180, 0);
+       if(closestEnemy != null){
+            if (closestEnemy.transform.position.x < PlayerManager.Instance.player.transform.position.x)
+            {
+                Debug.Log("skhdfkjshkjfhdskjfhjksd" + closestEnemy.name);
+                transform.Rotate(0, -180, 0);
+            }
         }
+
+       
 
 
     }
